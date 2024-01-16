@@ -1,16 +1,20 @@
 package array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FindDuplicate {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,4};
-        int len=arr.length;
-        int ans=0;
-        for (int i = 0; i < len; i++) {
-            ans=ans^arr[i];
+        int[] arr={4,3,2,7,8,2,3,1};
+        List<Integer> li=new ArrayList<>();
+        for(int num: arr){
+            int index= Math.abs(num);
+            if (arr[index-1]>0)
+                arr[index-1] *= -1;
+            else
+                li.add(index);
         }
-        for (int i = 1; i < len; i++) {
-            ans=ans^i;
-        }
-        System.out.println("Duplicate number::"+ans);
+        for (int x:li)
+            System.out.print(x +" ");
     }
 }
