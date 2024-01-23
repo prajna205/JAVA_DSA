@@ -1,4 +1,5 @@
 // First and Last Position of an Element In Sorted Array
+//Bruteforce
 package array;
 
 public class FirstAndLastOccurance {
