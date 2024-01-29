@@ -1,7 +1,6 @@
 // First and Last Position of an Element In Sorted Array
 //Bruteforce
 package array;
-
 public class FirstAndLastOccurance {
     public static int firstOccurance(int[] arr, int key){
         int ans=-1;
