@@ -1,5 +1,3 @@
-// First and Last Position of an Element In Sorted Array
-//Bruteforce
 package BinarySearch;
 public class TotalNoOfOccurance {
     public static int firstOccurance(int[] arr, int key){
