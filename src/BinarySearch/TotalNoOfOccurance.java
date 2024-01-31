@@ -1,7 +1,7 @@
 // First and Last Position of an Element In Sorted Array
 //Bruteforce
-package array;
-public class FirstAndLastOccurance {
+package BinarySearch;
+public class TotalNoOfOccurance {
     public static int firstOccurance(int[] arr, int key){
         int ans=-1;
         int start=0;
@@ -41,20 +41,12 @@ public class FirstAndLastOccurance {
     }
 
     public static void main(String[] args) {
-        int[] arr={0, 1, 2, 2, 2, 2};
-        int key =1;
-        int[] result={-1,-1};
-        /*for (int i = 0; i < arr.length; i++) {
-            if(arr[i] == target){
-                if(result[0] == -1)
-                    result[0] =i;
-                result[1]=i;
-            }
-        }//for
-        */
-        result[0] =firstOccurance(arr,key);
-        result[1] =lastOccurance(arr,key);
-        for(int x: result)
-            System.out.print(x +" ");
+        int[] arr={0, 1, 2, 2, 2, 2, 7};
+        int key=2;
+        int first =firstOccurance(arr,key);
+        System.out.println(first);
+        int last =lastOccurance(arr,key);
+        System.out.println(last);
+        System.out.print("Total no of occuraces:: "+ (last - first +1));
     }
 }

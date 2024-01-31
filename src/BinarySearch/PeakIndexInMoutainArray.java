@@ -1,5 +1,5 @@
 //leetcode- 852
-package array;
+package BinarySearch;
 public class PeakIndexInMoutainArray {
     public static void main(String[] args) {
         int[] arr={0,10,5,2};

@@ -1,6 +1,6 @@
-package array;
+package BinarySearch;
 
-public class BinarySearch {
+public class BinarySearchImpl {
     static int search(int[] arr,int key){
         int start=0, end=arr.length-1;
         while (start <= end){
